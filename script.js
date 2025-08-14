@@ -50,7 +50,7 @@ function removerCliente(id) {
     fetch(`${url}/${id}`, {
         method: 'DELETE'
     })
-    .then(response => {
+    .then(() => {
         const clienteDiv = document.querySelector(`div[data-id='${id}']`)
         if (clienteDiv) clienteDiv.remove()
     })
